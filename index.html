@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>cntrlF</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon.png">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <style>
-              body {
-                  margin: 0;
-                  padding: 0;
-                  background-color: black;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  min-height: 100vh;
-              }
+    <head>
+        <title>cntrlF</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon.png">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <style>
+                    body {
+                        margin: 0;
+                        padding: 0;
+                        background-color: black;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-height: 100vh;
+                        flex-direction: column;
+                    }
 
-              img {
-                  max-width: 15%;
-                  max-height: 15%;
-              }
-          </style>
-</head>
-<body>
-    <img src="Images/icon.png">
-</body>
+                    img {
+                        max-width: 15%;
+                        max-height: 15%;
+                    }
+
+                    .links-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        margin: 10px;
+                    }
+
+                    footer {
+                        text-align: center;
+                        color: white;
+                        margin-bottom: 10px;
+                    }
+                </style>
+            </head>
+    <body>
+        <div class="links-container">
+            <img src="Images/icon.png">
+        </div>
+
+        <footer>
+            <a href="terms-of-use.html" target="_blank">Terms of Use</a>
+            <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+        </footer>
+    </body>
 </html>
