@@ -1,53 +1,109 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>cntrlF</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon.png">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <style>
-                    body {
-                        margin: 0;
-                        padding: 0;
-                        background-color: black;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        min-height: 100vh;
-                        flex-direction: column;
-                    }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cntrl Apps</title>
+    <link rel="icon" href="Images/favicon.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+            padding: 20px;
+        }
 
-                    img {
-                        max-width: 15%;
-                        max-height: 15%;
-                    }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-                    .links-container {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                    }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
 
-                    a {
-                        color: white;
-                        text-decoration: none;
-                        margin: 10px;
-                    }
+        header p {
+            font-size: 1rem;
+            color: #666;
+        }
 
-                    footer {
-                        text-align: center;
-                        color: white;
-                        margin-bottom: 10px;
-                    }
-                </style>
-            </head>
-    <body>
-        <div class="links-container">
-            <img src="Images/icon.png">
-        </div>
+        .app-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
 
-        <footer>
-            <a href="terms-of-use.html" target="_blank">Terms of Use</a>
-            <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
-        </footer>
-    </body>
+        .app-link {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .app-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .app-link img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+        .app-link h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .app-link p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Control Apps</h1>
+        <p>Choose one of our applications to get started.</p>
+    </header>
+
+    <div class="app-container">
+        <!-- cntrlF app link -->
+        <a href="cntrlF/cntrlF.html" class="app-link">
+            <img src="Images/cntrlF-icon.png" alt="cntrlF Icon">
+            <h2>cntrlF</h2>
+            <p>Manage your finances with ease.</p>
+        </a>
+
+        <!-- cntrlA app link -->
+        <a href="cntrlA/cntrlA.html" class="app-link">
+            <img src="Images/cntrlA-icon.png" alt="cntrlA Icon">
+            <h2>cntrlA</h2>
+            <p>Track your commitments and stay focused.</p>
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 cntrl Apps. All rights reserved.</p>
+    </footer>
+</body>
 </html>
